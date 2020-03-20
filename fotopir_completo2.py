@@ -45,7 +45,7 @@ def pir_cb(channel):
     if estado:
         send_mail()
     else:
-        print ("Presiona el botón para activar la captura")
+        print ("Presiona el botón para activar la captura\n")
 
 GPIO.add_event_detect( pin_pir , GPIO.RISING , callback=pir_cb, bouncetime = 100)
 GPIO.add_event_detect( pin_boton , GPIO.FALLING , callback=button_cb , bouncetime = 300)
@@ -91,7 +91,7 @@ def send_mail():
     server.sendmail(sender, receiver, text)
     server.quit()    
 
-print ("Inicio exitoso")
+print ("Inicio exitoso\n")
 GPIO.output( pin_led , True )
 
 try:
