@@ -25,7 +25,6 @@ pin_led2 = 10
 
 estado = False
 
-GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(pin_pir, GPIO.IN)
 GPIO.setup(pin_boton, GPIO.IN, pull_up_down=GPIO.PUD_UP)
