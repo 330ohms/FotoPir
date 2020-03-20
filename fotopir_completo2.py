@@ -91,6 +91,7 @@ def send_mail():
     server.sendmail(sender, receiver, text)
     server.quit()    
 
+print ("Inicio exitoso")
 GPIO.output( pin_led , True )
 
 try:
