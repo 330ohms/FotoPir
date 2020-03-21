@@ -14,7 +14,7 @@ from email import encoders
 
 sender = '330ohms.p@gmail.com'
 password = '*********'
-receiver ='saul@330ohms.com'
+receiver ='********'
 
 DIR = './Database/'
 FILE_PREFIX = 'image'
